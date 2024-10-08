@@ -1,14 +1,14 @@
-Sistema Bancário em Python
+# Sistema Bancário em Python
 Este projeto é uma aplicação de um sistema bancário básico escrito em Python, utilizando conceitos de orientação a objetos (OO), como herança e polimorfismo. O sistema gerencia contas correntes de clientes, permitindo depósitos, saques, e visualização
 
 Funcional
-Criar clientes :
-Criar contas correntes :
-Realizar depósitos e saques: Os
-Exibir extratos :
-Limites:
-Estrutura das Classes
-Cliente
+  Criar clientes :
+  Criar contas correntes :
+  Realizar depósitos e saques: Os
+  Exibir extratos :
+  Limites:
+  Estrutura das Classes
+  Cliente
 A classe Clienterepresenta um cliente do banco. A classe PessoaFisicaherdada Clientee adiciona atributos específicos como CPF e dados de nascimento.
 
 Conta
