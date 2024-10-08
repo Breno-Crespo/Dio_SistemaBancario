@@ -12,27 +12,6 @@ Exibir extratos :
 
 Limites de saque:
 
-🏗️ Estrutura das
-1. Cliente
-Uma aulaClienterepresentantePessoaFisicaherdaClientee
-
-2.
-A classe Contaé
-
-3. ContaCorr
-Uma aulaContaCorrentedelaContae
-
-4. Transação
-Classe abstrata que define o comportamento de transações bancárias, como saques e depósitos. A aula Saquee Depositoimplementei essa abstração.
-
-5. Histórico
-Responsável por armazenar todas as transações realizadas em uma conta. Também é capaz de gerar relatórios detalhados sobre essas transações.
-
-6. ContasIterador
-Implemente um iterador que permite listar as contas do sistema de maneira simplificada.
-
-7. Decoradores
-@log_transacao: Usado para registrar e exibir o log quando uma transação é realizada.
 🚀 Como Usar
 1. Crie um novo cliente
 O cliente pode ser fornecido com as seguintes informações:
