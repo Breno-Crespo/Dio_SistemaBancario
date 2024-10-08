@@ -1,51 +1,67 @@
-# Sistema Bancário em Python
-Este projeto é uma aplicação de um sistema bancário básico escrito em Python, utilizando conceitos de orientação a objetos (OO), como herança e polimorfismo. O sistema gerencia contas correntes de clientes, permitindo depósitos, saques, e visualização
+# 🏦 Sistema Bancário em Python
+Este projeto é uma aplicação de um sistema bancário básico escrito em Python, utilizando conceitos de orientação a objetos (OO), como herança e polimorfismo. O sistema gerencia contas correntes de clientes, permitindo realizar depósitos, saques e visualizar extratos de forma simples
 
-Funcional
-    .Criar clientes :
-    .Criar contas correntes :
-    .Realizar depósitos e saques: Os
-    .Exibir extratos :
-    .Limites:
-    .Estrutura das Classes
-    .Cliente
-A classe Clienterepresenta um cliente do banco. A classe PessoaFisicaherdada Clientee adiciona atributos específicos como CPF e dados de nascimento.
+⚙️ Funcional
+Criar clientes:
 
-Conta
-A classe Contaé uma classe base para diferentes tipos de contas bancárias. Ela contém informações como saldo, número de conta e agência. Além disso, a classe gerencia transações como saque e depósito.
+Criar contas correntes:
 
-ContaCorrente
-Herda de Contaregras adicionais específicas, como limite de saques e valor máximo de saque por transação.
+Realizar depósitos e saques :
 
-Transacao
-Classe abstrata que define o comportamento de transações bancárias, como saques e depósitos.
+Exibir extratos :
 
-Historico
-Responsável por armazenar todas as transações realizadas em uma conta e gerar relatórios com essas transações.
+Limites de saque:
 
-ContasIterador
-Implementa um iterador que permite listar as contas do sistema de forma simplificada.
+🏗️ Estrutura das
+1. Cliente
+Uma aulaClienterepresentantePessoaFisicaherdaClientee
 
-Decoradores
-@log_transacao: Usado para registrar e exibir quando uma transação foi realizada.
-Como usar
+2.
+A classe Contaé
+
+3. ContaCorr
+Uma aulaContaCorrentedelaContae
+
+4. Transação
+Classe abstrata que define o comportamento de transações bancárias, como saques e depósitos. A aula Saquee Depositoimplementei essa abstração.
+
+5. Histórico
+Responsável por armazenar todas as transações realizadas em uma conta. Também é capaz de gerar relatórios detalhados sobre essas transações.
+
+6. ContasIterador
+Implemente um iterador que permite listar as contas do sistema de maneira simplificada.
+
+7. Decoradores
+@log_transacao: Usado para registrar e exibir o log quando uma transação é realizada.
+🚀 Como Usar
 1. Crie um novo cliente
-O cliente pode ser criado fornecendo informações básicas como nome, CPF, data de nascimento e endereço.
+O cliente pode ser fornecido com as seguintes informações:
 
+Nome
+CPF
+Data de nascimento
+Endereço
 2. Crie uma nova conta
-Depois de criar um cliente, é possível criar uma conta corrente para esse cliente, fornecendo um número de conta exclusivo.
+Após criar o cliente, você pode criar uma conta corrente fornecendo um número de conta exclusivo para o cliente.
 
 3. Realizar depósitos
-Após selecionar um cliente, é possível fazer depósitos na conta desse cliente.
+Selecione um cliente existente e realize um depósito na conta correspondente.
 
 4. Realizar saques
-Da mesma forma, é possível realizar saques, desde que o cliente tenha saldo disponível e não tenha excedido o limite de saques.
+Realize saques da conta do cliente, desde que haja saldo disponível e o limite de saques não tenha sido excedido.
 
 5. Exibir extrato
-O sistema gera um extrato com todas as transações realizadas por um cliente específico.
+Visualize todas as transações realizadas por um cliente, incluindo depósitos, saques e o saldo atual.
 
-Fluxo do Sistema
-O sistema segue um fluxo em contínuo um menu interativo, onde o usuário pode escolher depósitos, saques, criar clientes, criar contas, listar contas e exibir extratos.
+📋 Fluxo do Sistema
+O sistema segue um fluxo contínuo através de um menu interativo, onde o usuário pode escolher as seguintes opções:
 
-Requisitos
+Depositário
+Sacar
+Exibir Extrato
+Criar Cliente
+Criar Conta
+Listar Contas
+Sair
+🛠️ Requisitos
 Python 3.6 ou superior.
